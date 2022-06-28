@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  background: #f1f1f1;
+}
+
+.log {
+  min-height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+}
+
+.log img {
+  width: 8rem;
+}
+
+.loginform {
+  background: #f1f1f1;
+  padding: 2rem;
+  position: relative;
+  top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loginform form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 2;
+  width: 100%;
+}
+
+.loginform form .input_things {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.loginform form .input_things p {
+  font-size: 1.2rem;
+}
+
+.loginform form .input_things input {
+  border: none;
+  padding: .7rem;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginform form .forgerpass {
+  margin-top: -1.5rem;
+  font-size: .8rem;
+  text-align: end;
+}
+
+.loginform form .forgerpass a {
+  color: #5a5959;
+}
+
+.loginform form .submit {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.loginform form .submit .btn-submit {
+  background: #F05439;
+  color: #FFF;
+  width: 30%;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.loginform form .submit .btn-submit:hover {
+  background-color: #c15c4b;
+}
+
+.loginform form .logwithg {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.loginform form .logwithg p {
+  margin-bottom: 1rem;
+}
+
+.loginform form .logwithg a {
+  margin: 1rem;
+}
+
+.loginform form .logwithg a img {
+  width: 2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
