@@ -4,6 +4,8 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 textarea:focus,
@@ -81,7 +83,7 @@ body {
 
 .loginform form .input_things input {
   border: none;
-  padding: .7rem;
+  padding: 0.7rem;
   border-radius: 6px;
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -89,7 +91,7 @@ body {
 
 .loginform form .forgerpass {
   margin-top: -1.5rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: end;
 }
 
@@ -103,8 +105,8 @@ body {
 }
 
 .loginform form .submit .btn-submit {
-  background: #F05439;
-  color: #FFF;
+  background: #f05439;
+  color: #fff;
   width: 30%;
   display: inline-block;
   font-weight: 400;
@@ -116,14 +118,14 @@ body {
   -ms-user-select: none;
   user-select: none;
   border: 1px solid transparent;
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: .25rem;
-  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .loginform form .submit .btn-submit:hover {
@@ -148,5 +150,221 @@ body {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 5px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 2rem 0rem 2rem;
+  background: #fff;
+}
+
+header .logo img {
+  width: 9rem;
+}
+
+header .hamberger a {
+  position: relative;
+  font-size: 1.5rem;
+  color: black;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+header .hamberger a.hide {
+  visibility: hidden;
+}
+
+header .navigater {
+  position: fixed;
+  top: 0rem;
+  left: 0px;
+  z-index: 1;
+  background: #fff;
+  height: 100%;
+  width: 79%;
+  padding: 2rem;
+  visibility: hidden;
+  left: -100%;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+header .navigater.active {
+  visibility: visible;
+  left: 0;
+}
+
+header .navigater .close-menu {
+  position: relative;
+  top: -1rem;
+  font-size: 1.5rem;
+}
+
+header .navigater .close-menu a {
+  color: #000;
+}
+
+header .navigater .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+header .navigater .profile .image img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+header .navigater .profile .content h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+header .navigater .profile .content p {
+  font-size: 13px;
+}
+
+header .menu_list {
+  margin-top: 1.3rem;
+}
+
+header .menu_list a {
+  color: #000;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+header .menu_list a img {
+  padding-right: 1rem;
+  width: 1rem;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  padding: 1rem;
+}
+
+.search form {
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 88%;
+}
+
+.search form input {
+  width: 100%;
+  border: none;
+  margin-bottom: 0px;
+  padding-left: 1rem;
+}
+
+.search form button {
+  border: none;
+  background: no-repeat;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+}
+
+.search img {
+  width: 1rem;
+}
+
+.botamnav {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 2px;
+  height: 2.5rem;
+  width: 100%;
+}
+
+.botamnav a img {
+  width: 1.6rem;
+}
+
+.design {
+  background: #fff;
+  padding: 2rem;
+  text-align: right;
+}
+
+.design .title h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.design .drawing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design .drawing .card {
+  margin-top: 1rem;
+  width: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  color: #000;
+}
+
+.design .drawing .card .image {
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+
+.design .drawing .card .image img {
+  width: 100%;
+}
+
+.design .drawing .card p {
+  text-align: center;
+  font-size: .7rem;
+  margin-top: .2rem;
 }
 /*# sourceMappingURL=style.css.map */
